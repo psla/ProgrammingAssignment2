@@ -50,7 +50,7 @@ cacheSolve <- function(x, ...) {
   }
   
   # otherwise, compute the inverse and store in cache
-  computedInverse <- solve(x$get())
+  computedInverse <- solve(x$get(), ...)
   
   # store computed value in cache
   x$setinverse(computedInverse)
